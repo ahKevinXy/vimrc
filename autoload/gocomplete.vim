@@ -1,0 +1,1 @@
+/home/roy/coding/Golang_SourceCode/gocode/src/github.com/nsf/gocode/vim/autoload/gocomplete.vim
