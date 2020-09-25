@@ -89,7 +89,8 @@ map tn :tabnew %<cr>
 map te :tabedit 
 map tc :tabclose<cr>
 map tm :tabmove 
-
+map cn :tabn <cr>
+map cm :tabp <cr>
 
 " 将Ctrl+d映射为Golang自动补全
 imap <C-d> <C-x><C-o>
