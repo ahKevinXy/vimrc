@@ -57,6 +57,18 @@ set nobackup " 关闭备份文件
 
 
 set cursorline " 高亮当前行
+" 显示中文帮助
+if version >= 603
+	set helplang=cn
+	set encoding=utf-8
+endif
+
+try
+    lang=zh_CN
+catch
+endtry
+
+
 "}}}
 "
 " 设置主题
@@ -238,4 +250,7 @@ autocmd VimEnter * NERDTree | wincmd p
  "   endfunc
  "   nnoremap <C-n> :call NumberToggle()<CR>
   " }}}
+
+  set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [POS=%l,%v][%p%%]\ %{strftime(\"%y/%m/%d\ -\ %H:%M\")}   "状态行显示的内容
+
 

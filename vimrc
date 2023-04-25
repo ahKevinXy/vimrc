@@ -36,6 +36,7 @@ filetype plugin indent on
 syntax on "系统高亮
 
 set shell=bash
+set cul "高亮光标所在行
 
 let mapleader=','
 
@@ -239,3 +240,15 @@ autocmd VimEnter * NERDTree | wincmd p
  "   nnoremap <C-n> :call NumberToggle()<CR>
   " }}}
 
+  set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [POS=%l,%v][%p%%]\ %{strftime(\"%y/%m/%d\ -\ %H:%M\")}   "状态行显示的内容
+
+  " 显示中文帮助
+if version >= 603
+	set helplang=cn
+	set encoding=utf-8
+endif
+
+try
+    lang=zh_CN
+catch
+endtry
