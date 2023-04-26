@@ -197,15 +197,15 @@
   " }}}
 
   " relativenumber {{{
-    set relativenumber
-    augroup CursorLineOnlyInActiveWindow
-        autocmd!
-        autocmd InsertLeave * setlocal relativenumber
-        autocmd InsertEnter * setlocal norelativenumber
-        autocmd BufEnter * setlocal cursorline
-        autocmd BufLeave * setlocal nocursorline
+""   set relativenumber
+ ""   augroup CursorLineOnlyInActiveWindow
+  ""      autocmd!
+ ""       autocmd InsertLeave * setlocal relativenumber
+ ""       autocmd InsertEnter * setlocal norelativenumber
+ ""       autocmd BufEnter * setlocal cursorline
+ ""       autocmd BufLeave * setlocal nocursorline
         " autocmd CompleteDone *.go  call OnGolangCompleteDone()
-    augroup END
+""    augroup END
     function! NumberToggle()
         if(&relativenumber == 1)
             set norelativenumber number
@@ -724,5 +724,5 @@ hi Visual     guibg=#2566FA
 hi VertSplit guibg=#1B1D1E
 hi Cursor guibg=#FF0000
 
- let g:rainbow_active = 1 "0 if you want to enable it later via :RainbowToggle
+ let g:rainbow_active = 0 "0 if you want to enable it later via :RainbowToggle
 
