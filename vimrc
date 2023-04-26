@@ -726,3 +726,4 @@ hi Cursor guibg=#FF0000
 
  let g:rainbow_active = 0 "0 if you want to enable it later via :RainbowToggle
 
+  autocmd VimEnter * NERDTree | wincmd p
