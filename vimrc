@@ -17,7 +17,7 @@
   Plugin 'Xuyuanp/nerdtree-git-plugin'
   Plugin 'jistr/vim-nerdtree-tabs'
 
-  Plugin 'Valloric/YouCompleteMe'
+ "" Plugin 'Valloric/YouCompleteMe'
   Plugin 'SirVer/ultisnips'
   Plugin 'honza/vim-snippets'
   Plugin 'davidhalter/jedi-vim'
@@ -50,7 +50,7 @@
   Plugin 'tomasr/molokai'
   Plugin 'zaki/zazen'
 
-  
+  Plugin 'luochen1990/rainbow'
   " All of your Plugins must be added before the following line
   call vundle#end()            " required
   filetype plugin indent on    " required
@@ -723,4 +723,6 @@ hi Visual     guibg=#2566FA
 " hi VertSplit guibg=#272822
 hi VertSplit guibg=#1B1D1E
 hi Cursor guibg=#FF0000
+
+ let g:rainbow_active = 1 "0 if you want to enable it later via :RainbowToggle
 
